@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import PersonalSkills from "@/components/PersonalSkills";
 import React from "react";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className="bg-red-500  p-1 min-h-dvh">
       <Hero />
       <About />
+      <PersonalSkills />
     </div>
   );
 };
