@@ -1,9 +1,11 @@
+import SectionWrapper from "./SectionWrapper";
+
 const About = () => {
   return (
-    <div className="flex h-dvh">
-      <div className="bg-gray-800 w-2/3">Left Section</div>
-      <div className="bg-green-400 w-2/3">Right Section</div>
-    </div>
+    <SectionWrapper>
+      <div className="bg-darkGray w-2/3">About Left Section</div>
+      <div className="bg-lightGreen w-2/3">About Right Section</div>
+    </SectionWrapper>
   );
 };
 
