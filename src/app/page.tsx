@@ -1,8 +1,11 @@
+import Hero from "@/components/Hero";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="h-dvh grid place-items-center bg-gray-400">Stephen Udo</div>
+    <div className="h-dvh">
+      <Hero />
+    </div>
   );
 };
 
