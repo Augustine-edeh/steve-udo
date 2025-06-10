@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
-import { MoveRight } from "lucide-react";
+import { Globe, Mail, MoveRight } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -35,7 +36,26 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-lightGreen p-10 w-1/3">section 2</div>
+      <div className="bg-lightGreen p-10 w-1/3">
+        <div className="flex justify-between">
+          <p className="text-black">Contact Me</p>
+
+          <div className="flex gap-4">
+            <Link
+              href="#/contact"
+              className="size-8 grid place-items-center bg-black text-offWhite rounded-full"
+            >
+              <Globe className="" />
+            </Link>
+            <Link
+              href="#/contact"
+              className="size-8 grid place-items-center bg-black text-offWhite rounded-full"
+            >
+              <Mail />
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* Image Positioned at 2/3 Width (junction) */}
       <div className="absolute left-[63.6667%] top-[84%] -translate-x-1/2 -translate-y-1/2 z-10">
