@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="bg-lightGreen w-1/3">section 2</div>
+      <div className="bg-lightGreen p-10 w-1/3">section 2</div>
     </SectionWrapper>
   );
 };
