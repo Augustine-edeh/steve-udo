@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
 
 const Hero = () => {
@@ -26,6 +27,17 @@ const Hero = () => {
       </div>
 
       <div className="bg-lightGreen p-10 w-1/3">section 2</div>
+
+       {/* Image Positioned at 2/3 Width (junction) */}
+      <div className="absolute left-[63.6667%] top-[84%] -translate-x-1/2 -translate-y-1/2 z-10">
+        <Image
+          src='/Steve-pro.png'
+          alt="Stephen Udo"
+          width={600}
+          height={600}
+          className="object-cover"
+        />
+      </div>
     </SectionWrapper>
   );
 };
