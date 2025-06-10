@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
+import { MoveRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -15,12 +16,20 @@ const Hero = () => {
 
           <div className="mt-8 space-y-2">
             <div className="flex w-fit gap-1 p-0.5 bg-lightGreen">
-              <span className="w-44 p-1 bg-darkGray">GRAPHIC, UI/UX DESIGNER</span>
-              <button>--></button>
+              <span className="w-44 p-1 bg-darkGray">
+                GRAPHIC, UI/UX DESIGNER
+              </span>
+              <button>
+                <MoveRight className="text-black" />
+              </button>
             </div>
             <div className="flex w-fit gap-1 p-0.5 bg-lightGreen">
-              <span className="w-44 p-1 bg-darkGray"> DEVELOPER, DATA ANALYST</span>
-              <button>--></button>
+              <span className="w-44 p-1 bg-darkGray">
+                DEVELOPER, DATA ANALYST
+              </span>
+              <button>
+                <MoveRight className="text-black" />
+              </button>
             </div>
           </div>
         </div>
@@ -28,10 +37,10 @@ const Hero = () => {
 
       <div className="bg-lightGreen p-10 w-1/3">section 2</div>
 
-       {/* Image Positioned at 2/3 Width (junction) */}
+      {/* Image Positioned at 2/3 Width (junction) */}
       <div className="absolute left-[63.6667%] top-[84%] -translate-x-1/2 -translate-y-1/2 z-10">
         <Image
-          src='/Steve-pro.png'
+          src="/Steve-pro.png"
           alt="Stephen Udo"
           width={600}
           height={600}
