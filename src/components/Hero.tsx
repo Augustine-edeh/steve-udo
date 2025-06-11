@@ -10,7 +10,7 @@ const Hero = () => {
         <h2>PORTFOLIO.</h2>
 
         <div className="flex-1 flex flex-col justify-center  lg:px-16 bg -blue-500">
-          <h3 className="text-darkGreen">Hello Everyone.</h3>
+          <h3 className="text-green-600 darkGreen">Hello Everyone.</h3>
           <h1 className="mt-8 lg:mt-4 flex flex-col text-6xl font-bold">
             I&apos;M STEPHEN <span className="mx-auto lg:mx-0">UDO</span>
           </h1>
