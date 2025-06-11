@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <SectionWrapper className="flex-col lg:flex-row bg-yellow-500 relative overflow-hidden">
       <div className="flex flex-col bg-darkGray p-10 h-dvh w-full lg:w-2/3">
-        <h2>PORTFOLIO.</h2>
+        <h2>PORTFOLIO...</h2>
 
         <div className="flex-1 flex flex-col justify-center  lg:px-16 bg -blue-500">
           <h3 className="text-green-600 darkGreen">Hello Everyone.</h3>
