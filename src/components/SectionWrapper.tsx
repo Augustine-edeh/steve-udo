@@ -6,7 +6,11 @@ type SectionWrapperProps = {
 };
 
 const SectionWrapper = ({ children, className = "" }: SectionWrapperProps) => {
-  return <section className={`flex h-dvh ${className}`}>{children}</section>;
+  return (
+    <section className={`flex h-dvh min-h-dvh ${className}`}>
+      {children}
+    </section>
+  );
 };
 
 export default SectionWrapper;
