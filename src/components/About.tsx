@@ -1,21 +1,11 @@
-import Image from "next/image";
 import SectionWrapper from "./SectionWrapper";
+import LayeredImage from "./LayeredImage";
 
 const About = () => {
   return (
     <SectionWrapper className="">
       <div className="hidden lg:flex justify-center items-center bg-darkGray w-full lg:w-2/3">
-        <div className="flex relative">
-          <div className="h-96 w-80 bg-lightGreen"></div>
-          <div className="absolute left-[15%] -top-[7%] h-96 w-80 bg-darkGreen p-1">
-            <Image
-              src="/Steve-white.jpeg"
-              className="object-cover"
-              fill
-              alt="Stephen-udo"
-            />
-          </div>
-        </div>
+        <LayeredImage src="/Steve-white.jpeg" alt="Stephen Udo" />
       </div>
 
       <div className="bg-darkGray w-full lg:w-2/3">
