@@ -19,12 +19,12 @@ const About = () => {
       </div>
 
       <div className="bg-darkGray w-full lg:w-2/3">
-        <div className="flex justify-center items-center gap-32 lg:gap-64 py-8">
+        <div className="flex justify-center items-center gap-32 lg:gap-64 py-2 lg:py-8">
           <h1 className="text-4xl font-bold">About Me</h1>
-          <hr className=" border-2 flex-1 border-lightGreen" />
+          <hr className="border-2 flex-1 border-lightGreen" />
         </div>
 
-        <div className="mt-20 lg:mt-10 flex flex-col gap-4">
+        <div className="mt-10 lg:mt-20 flex flex-col gap-4">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
             veniam harum! At sed sit amet cumque dolore quos, consectetur omnis?
