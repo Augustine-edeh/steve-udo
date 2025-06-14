@@ -4,7 +4,7 @@ import SectionWrapper from "./SectionWrapper";
 const PersonalSkills = () => {
   return (
     <SectionWrapper className="bg-darkGray">
-      {/* <div className="bg-darkGray w-1/2"> */}
+      {/* <div className="bg-dark Gray w-1/2"> */}
 
       <div className="flex flex-col justify-center gap-5 w-full lg:w-1/2">
         <h1 className="text-4xl font-bold">Personal Skills</h1>
@@ -33,7 +33,7 @@ const PersonalSkills = () => {
         </div>
       </div>
       <div className="hidden lg:flex justify-center items-center bg-darkGray w-full lg:w-2/3">
-        <LayeredImage src="/Steve-white.jpeg" alt="Stephen Udo" />
+        <LayeredImage src="/Steve-pro_bg.jpeg" alt="Stephen Udo" />
       </div>
     </SectionWrapper>
   );
