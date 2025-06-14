@@ -1,10 +1,66 @@
 import SectionWrapper from "./SectionWrapper";
+import LayeredImage from "./LayeredImage";
 
 const About = () => {
   return (
-    <SectionWrapper>
-      <div className="bg-darkGray w-2/3">About Left Section</div>
-      <div className="bg-lightGreen w-2/3">About Right Section</div>
+    <SectionWrapper className="">
+      <div className="hidden lg:flex justify-center items-center bg-darkGray w-full lg:w-2/3">
+        <LayeredImage src="/Steve-white.jpeg" alt="Stephen Udo" />
+      </div>
+
+      <div className="bg-darkGray w-full lg:w-2/3">
+        <div className="flex justify-center items-center gap-32 lg:gap-64 py-2 lg:py-8">
+          <h1 className="text-4xl font-bold">About Me</h1>
+          <hr className="border-2 flex-1 border-lightGreen" />
+        </div>
+
+        <div className="mt-10 lg:mt-20 flex flex-col gap-4">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+            veniam harum! At sed sit amet cumque dolore quos, consectetur omnis?
+            Quisquam, optio repudiandae. Maxime soluta et distinctio sequi
+            deleniti aut. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Magnam alias repellendus, provident in ipsum voluptatibus?
+            Laudantium voluptatem similique sit modi. Rem similique magni
+            voluptatum unde facilis cupiditate numquam, ullam aspernatur!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam est
+            asperiores, neque, dolorum ratione praesentium possimus corrupti
+            aperiam esse facere suscipit non cum quam corporis quibusdam
+            perspiciatis nihil delectus! Sed.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            maiores magni, in nisi accusamus eligendi nemo ab, nulla quaerat.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam est
+            asperiores, neque, dolorum ratione praesentium possimus corrupti
+            aperiam esse facere suscipit non cum quam corporis quibusdam
+            perspiciatis nihil delectus! Sed.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            maiores magni, in nisi accusamus eligendi nemo ab, nulla quaerat.
+          </p>
+        </div>
+
+        <div className="flex gap-2 mt-4">
+          <button
+            type="button"
+            className="basis-36 py-3 bg-lightGreen text-darkGray cursor-pointer"
+          >
+            Hire Me
+          </button>
+          <button
+            type="button"
+            className="basis-36 py-3 bg-darkGray outline outline-lightGreen text-offWhite cursor-pointer"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
     </SectionWrapper>
   );
 };
