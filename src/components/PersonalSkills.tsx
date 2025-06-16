@@ -5,9 +5,6 @@ import SectionWrapper from "./SectionWrapper";
 const PersonalSkills = () => {
   return (
     <SectionWrapper className="bg-darkGray gap-10 items-center px-5 md:px-32 lg:px-40">
-      {/* <div className="bg-dark Gray w-1/2"> */}
-
-      {/* <div className="flex flex-col justify-center gap-5 w-full lg:w-1/2 bg-amber-400"> */}
       <div className="flex flex-col justify-center gap-5 w- full lg :w-1/2">
         <h1 className="text-4xl font-bold">Personal Skills</h1>
 
@@ -24,11 +21,9 @@ const PersonalSkills = () => {
         </div>
       </div>
 
-      {/* <div className="hidden lg:flex justify-center items-center bg-red-50 w-full lg:w-2/3"> */}
       <div className="hidden lg:block bg-red-950">
         <LayeredImage src="/Steve-pro_bg.jpeg" alt="Stephen Udo" />
       </div>
-      {/* </div> */}
     </SectionWrapper>
   );
 };
