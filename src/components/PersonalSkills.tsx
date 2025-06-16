@@ -1,4 +1,5 @@
 import LayeredImage from "./LayeredImage";
+import RatingBar from "./RatingBar";
 import SectionWrapper from "./SectionWrapper";
 
 const PersonalSkills = () => {
@@ -7,30 +8,19 @@ const PersonalSkills = () => {
       {/* <div className="bg-dark Gray w-1/2"> */}
 
       {/* <div className="flex flex-col justify-center gap-5 w-full lg:w-1/2 bg-amber-400"> */}
-      <div className="flex flex-col justify-center gap-5 w- full lg :w-1/2 bg-amber-400">
+      <div className="flex flex-col justify-center gap-5 w- full lg :w-1/2">
         <h1 className="text-4xl font-bold">Personal Skills</h1>
 
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            vel omnis, repellendus ad recusandae veniam molestiae et earum
-            ducimus adipisci iste. Odit adipisci voluptatem est laborum
-            consectetur quas eaque molestias!
-          </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          vel omnis, repellendus ad recusandae veniam molestiae et earum ducimus
+          adipisci iste. Odit adipisci voluptatem est laborum consectetur quas
+          eaque molestias!
+        </p>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-            error nesciunt nihil fugit, neque iure quibusdam doloribus beatae
-            eaque, quas odit tempora amet quo. Necessitatibus doloremque
-            possimus voluptatibus eius consequatur?
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-            neque harum voluptas reprehenderit nesciunt numquam, maiores quos
-            deserunt ullam. Ex provident quae sit soluta molestiae dolorum qui
-            velit quas mollitia.
-          </p>
+        <div className=" space-y-5">
+          <RatingBar rating={90} skill="Graphic Designer" />
+          <RatingBar rating={95} skill="Video Editing" />
         </div>
       </div>
 
