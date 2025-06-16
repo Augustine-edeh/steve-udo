@@ -18,7 +18,7 @@ const PersonalSkills = () => {
           eaque molestias!
         </p>
 
-        <div className=" space-y-5">
+        <div className="mt-5 space-y-6">
           <RatingBar rating={90} skill="Graphic Designer" />
           <RatingBar rating={95} skill="Video Editing" />
         </div>

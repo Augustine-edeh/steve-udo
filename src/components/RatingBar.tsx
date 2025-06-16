@@ -5,7 +5,7 @@ interface RatingBarProps {
 
 const RatingBar = ({ rating, skill }: RatingBarProps) => {
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 max-w-3xs lg:max-w-2xs">
       <h3 className="font-bold">{skill}</h3>
 
       <div className="flex items-center h-5 gap-5">
