@@ -28,9 +28,6 @@ const RecentProjects = () => {
               <Image
                 src={project.src}
                 className="object-cover w-full h-full"
-                // width={384}
-                // height={384}
-                // layout="fill"
                 fill
                 alt={project.title}
               />
