@@ -28,7 +28,7 @@ const RecentProjects = () => {
 
       <div className="w-full flex flex-wrap justify-center lg:justify-between gap-10 bg-orange-500">
         {recentProjects.map((project) => (
-          <div key={project.title} className="size -64 bg-green-500 p-1">
+          <div key={project.title} className="bg-green-500 p-1">
             <div className="relative size-80 bg-amber-300">
               <Image
                 src={project.src}
