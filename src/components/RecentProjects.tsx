@@ -24,13 +24,14 @@ const RecentProjects = () => {
       <div className="flex-1 flex justify-center lg:justify-between items-center flex-wrap lg:flex-nowrap gap-10 bg-orange-500">
         {recentProjects.map((project) => (
           <div key={project.title} className="size -64 bg-green-500 p-1">
-            <div className="size-80 lg:size-80 bg-amber-300">
+            <div className="relative size-80 lg:size-80 bg-amber-300">
               <Image
                 src={project.src}
-                // className="object-cover"
-                width={384}
-                height={384}
-                // fill
+                className="object-cover w-full h-full"
+                // width={384}
+                // height={384}
+                // layout="fill"
+                fill
                 alt={project.title}
               />
             </div>
