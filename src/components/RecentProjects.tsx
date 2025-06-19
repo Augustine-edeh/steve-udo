@@ -21,6 +21,8 @@ const RecentProjects = () => {
     // NOTE: undo justify-center later on
     // and add py-10 to sectionWrapper here
 
+    // TODO: Typography consistency; Use text-xl for titles inside cards & text-4xl for main headings (looks cleaner and maintains hierarchy)
+
     <SectionWrapper className="flex-col justify-center gap-10 px-5 lg:px-40 bg-pink-500">
       <h1 className="text-4xl font-bold">Recent Projects</h1>
 
