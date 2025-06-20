@@ -26,14 +26,23 @@ const MyBestProjects = () => {
     <SectionWrapper className="flex-col bg-darkGray px-5 py-10">
       <h1 className="text-4xl font-bold">My Best Projects</h1>
 
-      <div className="w-full flex flex-wrap justify-center lg:justify between gap-10 bg-purple-500">
+      <div className="w-full flex flex-wrap lg:flex-nowrap justify-center gap-10 bg-purple-500">
+        <div className="hidden lg:flex flex-col justify-center gap-10 bg-red-500">
+          {bestProjects.map((project) => (
+            <div key={project.title}>
+              <h4 className="text-xl font-bold">{project.title}</h4>
+              <p>{project.description}</p>
+            </div>
+          ))}
+        </div>
+
         {bestProjects.map((project) => (
           <div
             key={project.title}
-            className="bg-amber-600 w-80
+            className="bg-amber-600 w-80 lg:w-96
           "
           >
-            <div className="relative size-80 bg-amber-300">
+            <div className="relative size-80 lg:size-96 bg-amber-300">
               <Image
                 src={project.src}
                 fill
@@ -42,7 +51,7 @@ const MyBestProjects = () => {
               />
             </div>
 
-            <div className="px-3 pb-2">
+            <div className="px-3 pb-2 lg:hidden">
               <h4 className="text-xl font-semibold my-3">{project.title}</h4>
               <p>{project.description}</p>
             </div>
